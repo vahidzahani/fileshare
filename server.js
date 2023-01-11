@@ -25,7 +25,7 @@ io.on("connection",function(socket){
         socket.in(data.uid).emit("fs-share",data.buffer);
     });
 
-
 });
-
-server.listen(5000);
+server.listen(5000,function(){
+    console.log("PORT 5000 runed");
+});
